@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.eshopper.app-mergeDebugResources-60:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Kageyoshi\\.gradle\\caches\\transforms-3\\78d5453bf8147e6b13c02008a920b18b\\transformed\\appcompat-1.6.1\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".admin.add.AddCategoryFragment">
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageBack"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:padding="@dimen/_2sdp"
+            android:gravity="center"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:src="@drawable/back"
+            app:tint="@color/tint_secondary"
+            />
+
+        <TextView
+            android:id="@+id/categoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:padding="@dimen/_2sdp"
+            android:text="@string/add_category"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/tint_primary"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separator_primary"
+        android:layout_below="@id/layoutHeader"
+        />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/name_category"
+            android:textColor="@color/tint_primary"
+            android:textSize="@dimen/_16ssp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginBottom="10dp"
+            app:boxStrokeColor="@color/tint_secondary"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/categoryName"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@drawable/custom_input"
+                android:ems="1"
+                android:hint="@string/name_category"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@color/tint_secondary"
+                android:textColorHint="@color/tint_secondary"
+                android:textSize="@dimen/_14ssp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/image"
+            android:textColor="@color/tint_primary"
+            android:textSize="@dimen/_16ssp" />
+
+        <ImageView
+            android:id="@+id/imagaCategory"
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:src="@drawable/add_image"
+            android:scaleType="centerCrop"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAddCategory"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:background="@drawable/custom_button"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+
+
+            />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

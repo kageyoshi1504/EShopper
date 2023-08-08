@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    tools:context=".users.main.PaymentFragment">
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/background_primary"
+        android:id="@+id/cardViewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+
+            android:id="@+id/layoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <ImageView
+                android:id="@+id/imageBack"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:padding="@dimen/_2sdp"
+                android:gravity="center"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:src="@drawable/back"
+                app:tint="@color/tint_secondary"
+                />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:padding="@dimen/_2sdp"
+                android:text="Thanh toán"
+                android:textSize="@dimen/_16ssp"
+                android:textColor="@color/tint_primary"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separator_primary"
+        android:layout_below="@id/cardViewHeader"
+        />
+
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            >
+           <LinearLayout
+               android:layout_marginVertical="@dimen/_5sdp"
+               android:id="@+id/layout_name"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               >
+
+               <TextView
+                   android:id="@+id/tvName"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/fullname"
+                   android:textColor="@color/tint_primary"
+                   android:layout_marginBottom="@dimen/_2sdp"
+                   android:padding="@dimen/_2sdp"
+                   />
+               <EditText
+                   android:id="@+id/nameEt"
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/_36sdp"
+                   android:padding="@dimen/_8sdp"
+                   android:background="@drawable/custom_input"
+                   android:hint="@string/fullname"
+                   android:textColor="@color/tint_primary"
+                   android:textSize="@dimen/_12sdp"
+                   />
+
+
+           </LinearLayout>
+            <LinearLayout
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_below="@id/layout_name"
+                android:id="@+id/layout_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tvNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone"
+                    android:textColor="@color/tint_primary"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:padding="@dimen/_2sdp"
+                    />
+                <EditText
+                    android:id="@+id/phoneEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/phone"
+                    android:textColor="@color/tint_primary"
+                    android:textSize="@dimen/_12sdp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_below="@id/layout_number"
+                android:id="@+id/layout_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tvadress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address"
+                    android:textColor="@color/tint_primary"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:padding="@dimen/_2sdp"
+                    />
+                <EditText
+                    android:id="@+id/addressEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/address"
+                    android:textColor="@color/tint_primary"
+                    android:textSize="@dimen/_12sdp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_below="@id/layout_address"
+                android:id="@+id/layout_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tvMethod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phương thức thanh toán"
+                    android:textColor="@color/tint_primary"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:padding="@dimen/_2sdp"
+                    />
+                <EditText
+                    android:id="@+id/methodEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:background="@drawable/custom_input"
+                    android:hint="Phương thức thanh toán"
+                    android:textColor="@color/tint_primary"
+                    android:textSize="@dimen/_12sdp"
+                    android:enabled="false"
+                    />
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:id="@+id/product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sản phẩm"
+                android:layout_below="@id/layout_method"
+                android:textColor="@color/tint_primary"
+                />
+            <ScrollView
+                android:layout_below="@id/product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarSize="@dimen/_2sdp"
+                android:scrollbarStyle="outsideOverlay"
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPayment"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_below="@id/product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/payment_item"
+                    />
+            </ScrollView>
+        </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="@dimen/_20sdp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/cardViewPayment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/order"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@color/tint_secondary"
+                android:text="Đặt hàng"
+                android:gravity="center"
+                android:textColor="@color/tint_primary"
+                android:layout_alignParentEnd="true"/>
+            <TextView
+                android:id="@+id/sum_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sum_payment"
+                android:textSize="@dimen/_8sdp"
+                android:textStyle="bold"
+                android:layout_toStartOf="@id/order"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                />
+            <TextView
+                android:id="@+id/totalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_10sdp"
+                android:layout_toStartOf="@id/order"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:text="300.000.000đ"
+                android:textColor="@color/red"
+                android:layout_below="@id/sum_payment"
+
+
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

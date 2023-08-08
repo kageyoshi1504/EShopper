@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <ImageView
+        android:id="@+id/success"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/success_payment"
+        app:tint="@color/tint_primary"
+
+        />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/success"
+        android:layout_centerInParent="true"
+        android:text="Cảm ơn bạn đã mua hàng"
+        android:textColor="@color/tint_primary"
+        android:textSize="@dimen/_16sdp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backHome"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/empty_button"
+        android:padding="@dimen/_14sdp"
+        android:text="Quay về"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_14ssp" />
+</RelativeLayout>

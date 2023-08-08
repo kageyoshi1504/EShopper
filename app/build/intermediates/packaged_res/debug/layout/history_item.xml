@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginVertical="@dimen/_5sdp"
+    
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp">
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/uid"
+                android:text="Mã : "
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/tint_primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                />
+            <TextView
+                android:layout_below="@id/uid"
+                android:id = "@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số lượng đã đặt"
+                android:textSize="@dimen/_11ssp"
+                android:layout_marginBottom="@dimen/_5sdp"
+
+                />
+            <TextView
+                android:layout_below="@id/amount"
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngay dat"
+                android:textSize="@dimen/_11ssp"
+                android:layout_marginBottom="@dimen/_5sdp"
+
+                />
+            <TextView
+                android:layout_below="@id/amount"
+                android:layout_toEndOf="@id/date"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số lượng đã đặt"
+                android:textSize="@dimen/_11ssp"
+                android:layout_marginBottom="@dimen/_5sdp"
+
+                />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="Số lượng đã đặt"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/_11ssp"
+
+                />
+            <TextView
+                android:layout_below="@id/address"
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số lượng đã đặt"
+                android:textSize="@dimen/_11ssp"
+                android:layout_marginBottom="@dimen/_5sdp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/status"
+                android:layout_below="@id/address"
+                android:layout_alignParentEnd="true"
+                android:text="Số lượng đã đặt"
+                android:textSize="@dimen/_11ssp"
+                />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

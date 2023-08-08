@@ -1,0 +1,246 @@
+[
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_cart.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_cart.xml"
+    },
+    {
+        "merged": "com.example.eshopper.app-mergeDebugResources-61:/layout/admin_product_item.xml",
+        "source": "com.example.eshopper.app-main-64:/layout/admin_product_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_admin_category.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_admin_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\progress_hud.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\progress_hud.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_register.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_home_order_detail.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_home_order_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\item_category.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\item_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\category_parent_item.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\category_parent_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_history.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\admin_category_item.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\admin_category_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_update_profile.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_update_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\nav_header.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\nav_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_admin_detail_order_adapter.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_admin_detail_order_adapter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\home_hot_deal_product_item.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\home_hot_deal_product_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_payment.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_payment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\payment_item.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\payment_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_order_detail.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_order_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\home_product_list.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\home_product_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\order_detail_item.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\order_detail_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\home_popular_product.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\home_popular_product.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\category_item.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\category_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\empty_cart.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\empty_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_pending.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_pending.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\home_popular_product_item.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\home_popular_product_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_settings.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_admin_product.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_admin_product.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_receive.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_receive.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_forgot_password.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_forgot_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_add_product.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_add_product.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\admin_parent_product.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\admin_parent_product.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\payment_success.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\payment_success.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_in_delivery.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_in_delivery.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_home_admin.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_home_admin.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\order_item.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\order_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\home_category_list.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\home_category_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\home_hot_deal_product.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\home_hot_deal_product.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\admin_product_item.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\admin_product_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_change_password.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_change_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\order_detail_product.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\order_detail_product.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\home_product_list_item.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\home_product_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_change_email.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_change_email.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_admin_detail_order.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_admin_detail_order.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_admin_detail_category.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_admin_detail_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\order_detail.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\order_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_add_category.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_add_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\home_product_detail_item.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\home_product_detail_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_home_product_detail.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_home_product_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\home_category_list_item.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\home_category_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_login.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\home_category_detail_item.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\home_category_detail_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_home_category_detail.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_home_category_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\empty_history.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\empty_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_admin_detail_product.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_admin_detail_product.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_admin_statics.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_admin_statics.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\cart_item.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\cart_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\history_item.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\history_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_category.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_admin_order.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_admin_order.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-mergeDebugResources-61:\\layout\\fragment_cancelled.xml",
+        "source": "C:\\Users\\Kageyoshi\\.gradle\\daemon\\8.0\\com.example.eshopper.app-main-64:\\layout\\fragment_cancelled.xml"
+    }
+]

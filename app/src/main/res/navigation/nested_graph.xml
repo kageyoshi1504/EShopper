@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nested_graph"
+    app:startDestination="@id/loginFragment"
+    >
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.eshopper.auth.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/LoginToUser"
+            app:destination="@id/userFragment" />
+        <action
+            android:id="@+id/LoginToRegister"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/slide_in_right" />
+
+        <action
+            android:id="@+id/LoginToAdminHome"
+            app:destination="@id/adminHomeFragment" />
+        <action
+            android:id="@+id/loginToForgot"
+            app:destination="@id/forgotToLogin"
+            app:enterAnim="@anim/slide_in_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.eshopper.users.main.HomeFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/userFragmentToUserCategory"
+            app:destination="@id/categoryFragment"
+            app:enterAnim="@anim/slide_in_right" />
+        <action
+            android:id="@+id/userFragmentToLoginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/slide_in_left" />
+        <action
+            android:id="@+id/userToHomeCategoryDetail"
+            app:destination="@id/homeCategoryDetailFragment" />
+        <action
+            android:id="@+id/userToCart"
+            app:destination="@id/userHomeToCart" />
+        <argument android:name="itemId"
+            app:argType="string" />
+        <action
+            android:id="@+id/userToHomeProductDetail"
+            app:destination="@id/homeProductDetailFragment" />
+
+        <action
+            android:id="@+id/userToHistory"
+            app:destination="@id/historyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.eshopper.auth.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/RegisterToLogin"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/registerToUser"
+            app:destination="@id/userFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.eshopper.users.main.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_userFragment"
+            app:destination="@id/userFragment"
+            app:popEnterAnim="@anim/slide_in_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/adminHomeFragment"
+        android:name="com.example.eshopper.admin.main.AdminHomeFragment"
+        android:label="fragment_home_admin"
+        tools:layout="@layout/fragment_home_admin" >
+        <action
+            android:id="@+id/adminHomeToAdminCategory"
+            app:destination="@id/adminCategory"
+            app:enterAnim="@anim/slide_in_right" />
+        <action
+            android:id="@+id/adminHomeToAdminProduct"
+            app:destination="@id/adminProductFragment"
+            app:enterAnim="@anim/slide_in_right" />
+        <action
+            android:id="@+id/adminHomeToAdminStatics"
+            app:destination="@id/adminStaticsFragment"
+            app:enterAnim="@anim/slide_in_right" />
+        <action
+            android:id="@+id/adminHomeToAdminOrder"
+            app:destination="@id/adminOrderFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/adminCategory"
+        android:name="com.example.eshopper.admin.main.AdminCategoryFragment"
+        android:label="fragment_admin_category"
+        tools:layout="@layout/fragment_admin_category" >
+        <action
+            android:id="@+id/adminCategoryToAdminHome"
+            app:destination="@id/adminHomeFragment"
+            app:popEnterAnim="@anim/slide_in_left" />
+        <action
+            android:id="@+id/adminCategoryToAddCategory"
+            app:destination="@id/addCategoryFragment"
+            app:enterAnim="@anim/slide_in_right" />
+
+        <action
+            android:id="@+id/adminCategoryToAdminDetailCategory"
+            app:destination="@id/adminDetailCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminProductFragment"
+        android:name="com.example.eshopper.admin.main.AdminProductFragment"
+        android:label="fragment_admin_product"
+        tools:layout="@layout/fragment_admin_product" >
+        <action
+            android:id="@+id/AdminProductToAdminHome"
+            app:destination="@id/adminHomeFragment"
+            app:popEnterAnim="@anim/slide_in_left" />
+        <action
+            android:id="@+id/adminProductToAddProduct"
+            app:destination="@id/addProductFragment"
+            app:enterAnim="@anim/slide_in_right" />
+        <action
+            android:id="@+id/adminProductToAdminDetailProduct"
+            app:destination="@id/adminDetailProductFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/adminStaticsFragment"
+        android:name="com.example.eshopper.admin.main.AdminStaticsFragment"
+        android:label="fragment_admin_statics"
+        tools:layout="@layout/fragment_admin_statics" >
+        <action
+            android:id="@+id/adminStaticsToAdminHome"
+            app:destination="@id/adminHomeFragment"
+            app:popEnterAnim="@anim/slide_in_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addCategoryFragment"
+        android:name="com.example.eshopper.admin.add.AddCategoryFragment"
+        android:label="fragment_add_category"
+        tools:layout="@layout/fragment_add_category" >
+        <action
+            android:id="@+id/addCategoryToAdminCategory"
+            app:destination="@id/adminCategory"
+            app:popEnterAnim="@anim/slide_in_left" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="com.example.eshopper.admin.add.AddProductFragment"
+        android:label="fragment_add_product"
+        tools:layout="@layout/fragment_add_product" >
+        <action
+            android:id="@+id/addProductToAdminProduct"
+            app:destination="@id/adminProductFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/adminDetailProductFragment"
+        android:name="com.example.eshopper.admin.detail.AdminDetailProductFragment"
+        android:label="fragment_admin_detail_product"
+        tools:layout="@layout/fragment_admin_detail_product" >
+        <action
+            android:id="@+id/adminDetailProductToAdminProduct"
+            app:destination="@id/adminProductFragment"
+            app:enterAnim="@anim/slide_in_right" />
+        <argument
+            android:name="productId"
+            app:argType="string" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/adminDetailCategoryFragment"
+        android:name="com.example.eshopper.admin.detail.AdminDetailCategoryFragment"
+        android:label="fragment_admin_detail_category"
+        tools:layout="@layout/fragment_admin_detail_category" >
+        <action
+            android:id="@+id/adminDetailCategoryToAdminCategory"
+            app:destination="@id/adminCategory" />
+        <argument
+            android:name="categoryId"
+            app:argType="string" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/forgotToLogin"
+        android:name="com.example.eshopper.auth.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.eshopper.users.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/settingsToUser"
+            app:destination="@id/userFragment" />
+        <action
+            android:id="@+id/settingToUpdate"
+            app:destination="@id/udapteProfileToSettings"
+            app:enterAnim="@anim/slide_in_right" />
+        <action
+            android:id="@+id/settingsToLogin"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/settingsToChangePass"
+            app:destination="@id/changePasswordFragment" />
+        <action
+            android:id="@+id/settingsToChangeEmail"
+            app:destination="@id/changeEmailFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/udapteProfileToSettings"
+        android:name="com.example.eshopper.users.settings.UpdateProfileFragment"
+        android:label="fragment_update_profile"
+        tools:layout="@layout/fragment_update_profile" >
+        <action
+            android:id="@+id/updateToSettings"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.example.eshopper.users.settings.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" >
+        <action
+            android:id="@+id/changePassToSettings"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeEmailFragment"
+        android:name="com.example.eshopper.users.settings.ChangeEmailFragment"
+        android:label="fragment_change_email"
+        tools:layout="@layout/fragment_change_email" >
+        <action
+            android:id="@+id/changeEmailToSettings"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeCategoryDetailFragment"
+        android:name="com.example.eshopper.users.main.HomeCategoryDetailFragment"
+        android:label="fragment_home_category_detail"
+        tools:layout="@layout/fragment_home_category_detail" >
+        <action
+            android:id="@+id/homeCategoryDetailToUser"
+            app:destination="@id/userFragment" />
+        <argument
+            android:name="itemId"
+            app:argType="string" />
+        <action
+            android:id="@+id/homeCategoryDetailToHomeProductDetail"
+            app:destination="@id/homeProductDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userHomeToCart"
+        android:name="com.example.eshopper.users.main.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/cartToUserHome"
+            app:destination="@id/userFragment" />
+        <argument
+            android:name="productId"
+            app:argType="string" />
+        <action
+            android:id="@+id/cartToDetail"
+            app:destination="@id/homeProductDetailFragment" />
+        <action
+            android:id="@+id/cartToPayment"
+            app:destination="@id/paymentFragment" />
+        <action
+            android:id="@+id/action_userHomeToCart_self"
+            app:destination="@id/userHomeToCart" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeProductDetailFragment"
+        android:name="com.example.eshopper.users.main.HomeProductDetailFragment"
+        android:label="fragment_home_product_detail"
+        tools:layout="@layout/fragment_home_product_detail" >
+        <action
+            android:id="@+id/homeProductDetailToUser"
+            app:destination="@id/userFragment" />
+        <argument
+            android:name="itemId"
+            app:argType="string" />
+        <action
+            android:id="@+id/userHomeProductDetailToCart"
+            app:destination="@id/userHomeToCart" />
+        <action
+            android:id="@+id/productToPayment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.eshopper.users.main.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" >
+        <argument
+            android:name="itemId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_paymentFragment_to_successPayment"
+            app:destination="@id/successPayment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.eshopper.users.main.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_cancelledFragment"
+            app:destination="@id/cancelledFragment" />
+        <action
+            android:id="@+id/action_historyFragment_to_inDeliveryFragment"
+            app:destination="@id/inDeliveryFragment" />
+        <action
+            android:id="@+id/action_historyFragment_to_receiveFragment"
+            app:destination="@id/receiveFragment" />
+        <action
+            android:id="@+id/action_historyFragment_to_pendingFragment"
+            app:destination="@id/pendingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminOrderFragment"
+        android:name="com.example.eshopper.admin.main.AdminOrderFragment"
+        android:label="fragment_admin_order"
+        tools:layout="@layout/fragment_admin_order" >
+        <action
+            android:id="@+id/adminOrderToAdminHome"
+            app:destination="@id/adminHomeFragment" />
+        <action
+            android:id="@+id/action_adminOrderFragment_to_orderDetailFragment"
+            app:destination="@id/orderDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/successPayment"
+        android:name="com.example.eshopper.users.main.SuccessPayment"
+        android:label="fragment_success_payment"
+        tools:layout="@layout/fragment_success_payment" />
+    <fragment
+        android:id="@+id/orderDetailFragment"
+        android:name="com.example.eshopper.admin.main.OrderDetailFragment"
+        android:label="fragment_order_detail"
+        tools:layout="@layout/fragment_order_detail" >
+        <argument android:name="uid"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeOrderDetail"
+        android:name="com.example.eshopper.users.main.HomeOrderDetail"
+        android:label="fragment_home_order_detail"
+        tools:layout="@layout/fragment_home_order_detail" >
+        <argument
+            android:name="uid"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/cancelledFragment"
+        android:name="com.example.eshopper.users.main.CancelledFragment"
+        android:label="fragment_cancelled"
+        tools:layout="@layout/fragment_cancelled" >
+        <action
+            android:id="@+id/cancelToDetail"
+            app:destination="@id/homeOrderDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/pendingFragment"
+        android:name="com.example.eshopper.users.main.PendingFragment"
+        android:label="fragment_pending"
+        tools:layout="@layout/fragment_pending" >
+        <action
+            android:id="@+id/PendingToDetail"
+            app:destination="@id/homeOrderDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/inDeliveryFragment"
+        android:name="com.example.eshopper.users.main.InDeliveryFragment"
+        android:label="fragment_in_delivery"
+        tools:layout="@layout/fragment_in_delivery" >
+        <action
+            android:id="@+id/DeliveryToDetail"
+            app:destination="@id/homeOrderDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/receiveFragment"
+        android:name="com.example.eshopper.users.main.ReceiveFragment"
+        android:label="fragment_receive"
+        tools:layout="@layout/fragment_receive" >
+        <action
+            android:id="@+id/ReceiverToDetail"
+            app:destination="@id/homeOrderDetail" />
+    </fragment>
+</navigation>

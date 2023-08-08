@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageCategory"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_centerHorizontal="true"
+
+            />
+            <TextView
+                android:layout_below="@id/imageCategory"
+                android:id="@+id/nameCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ta la ai"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/_10ssp"
+                />
+
+
+
+
+</RelativeLayout>

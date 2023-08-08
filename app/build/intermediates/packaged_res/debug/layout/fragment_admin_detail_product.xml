@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".admin.detail.AdminDetailProductFragment">
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageBack"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:padding="@dimen/_2sdp"
+            android:gravity="center"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:src="@drawable/back"
+            app:tint="@color/tint_secondary"
+            />
+
+        <TextView
+            android:id="@+id/productTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp"
+            android:text="@string/productDetail"
+            android:textColor="@color/tint_primary"
+            android:textSize="@dimen/_16ssp" />
+
+        <ImageView
+            android:id="@+id/imageLoad"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:padding="@dimen/_2sdp"
+            android:gravity="center"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:src="@drawable/refresh"
+            app:tint="@color/tint_primary"
+            />
+
+        <ImageView
+            android:id="@+id/imageAdd"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/check"
+            app:tint="@color/tint_primary" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separator_primary"
+        android:layout_below="@id/layoutHeader"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutHeader"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:id="@+id/layout_head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:text="@string/name_product"
+                        android:textColor="@color/tint_primary"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_marginBottom="10dp"
+                        app:boxStrokeColor="@color/tint_secondary"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/nameProductEt"
+                            android:layout_width="@dimen/_170sdp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:background="@drawable/custom_input"
+                            android:ems="1"
+                            android:hint="@string/name_product"
+                            android:inputType="textEmailAddress"
+                            android:padding="10dp"
+                            android:textColor="@color/tint_secondary"
+                            android:textColorHint="@color/tint_secondary"
+                            android:textSize="@dimen/_14ssp" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:text="@string/price_product"
+                        android:textColor="@color/tint_primary"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_marginBottom="10dp"
+                        app:boxStrokeColor="@color/tint_secondary"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/priceEt"
+                            android:layout_width="@dimen/_170sdp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:background="@drawable/custom_input"
+                            android:ems="1"
+                            android:hint="@string/price_product"
+                            android:padding="10dp"
+                            android:textColor="@color/tint_secondary"
+                            android:textColorHint="@color/tint_secondary"
+                            android:textSize="@dimen/_16ssp" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageProduct"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/add_image"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_info"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_head"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_product"
+                    android:textColor="@color/tint_primary"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:textSize="@dimen/_16ssp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/blur"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:text="@string/category"
+                        android:textColor="@color/tint_secondary"
+                        android:textSize="@dimen/_20sdp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/btnCategory"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/custom_input"
+                        android:gravity="center"
+                        android:text="@string/category"
+                        android:textAllCaps="false"
+                        android:textColor="@color/tint_primary"
+                        android:textSize="@dimen/_16sdp"
+                        app:drawableEndCompat="@drawable/arrow_down" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="2"
+                    android:background="@color/blur"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/amount"
+                        android:textColor="@color/tint_secondary"
+                        android:textSize="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="0.8"
+                        android:textStyle="bold"
+                        />
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1.2"
+                        android:layout_height="@dimen/_45sdp"
+                        app:boxStrokeColor="@color/tint_secondary"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/amountProduct"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:background="@drawable/custom_input"
+                            android:ems="1"
+                            android:hint="@string/amount"
+                            android:padding="10dp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/tint_secondary"
+                            android:textColorHint="@color/tint_secondary"
+                            android:textSize="@dimen/_16ssp" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="2"
+                    android:background="@color/blur"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/type"
+                        android:textColor="@color/tint_secondary"
+                        android:textSize="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="0.8"
+                        android:textStyle="bold"
+                        />
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1.2"
+                        android:layout_height="@dimen/_45sdp"
+                        app:boxStrokeColor="@color/tint_secondary"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/typeProduct"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/custom_input"
+                            android:hint="@string/type"
+                            android:padding="10dp"
+                            android:textColor="@color/tint_secondary"
+                            android:textColorHint="@color/tint_secondary"
+                            android:textSize="@dimen/_16ssp" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"
+                    android:textColor="@color/tint_primary"
+                    android:textSize="@dimen/_16ssp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                     />
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    app:boxStrokeColor="@color/tint_secondary"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/descProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_80sdp"
+                        android:background="@drawable/custom_input"
+                        android:hint="Nhập thông tin sản phẩm"
+                        android:padding="10dp"
+                        android:textColor="@color/tint_secondary"
+                        android:textColorHint="@color/tint_secondary"
+                        android:textSize="@dimen/_16ssp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

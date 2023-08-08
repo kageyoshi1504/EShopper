@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginVertical="@dimen/_10sdp"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/uid"
+                android:text="Mã : "
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/tint_primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                />
+            <TextView
+                android:id="@+id/order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/uid"
+                android:hint ="Đơn hàng"
+                android:layout_marginBottom="@dimen/_5sdp"
+                />
+            <TextView
+                android:id="@+id/amountOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order"
+                android:hint="Số đơn đã đặt : "
+                />
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order"
+                android:layout_alignParentEnd="true"
+                android:text="Đang chờ vận chuyển"
+                android:layout_marginEnd="@dimen/_8sdp"
+                />
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:tint="@color/tint_primary"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ellipsis_svg"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_primary"
+    tools:context=".admin.main.AdminCategoryFragment">
+
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="1dp"
+        app:cardBackgroundColor="@color/background_primary"
+        android:id="@+id/cardViewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:id="@+id/layoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <ImageView
+                android:id="@+id/imageBack"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:padding="@dimen/_2sdp"
+                android:gravity="center"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:src="@drawable/back"
+                app:tint="@color/tint_secondary"
+                />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:padding="@dimen/_2sdp"
+                android:textSize="@dimen/_16ssp"
+                android:textColor="@color/tint_primary"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separator_primary"
+        android:layout_below="@id/cardViewHeader"
+        />
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCategory"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/admin_category_item"
+            />
+    </ScrollView>
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_16ssp"
+        android:layout_centerInParent="true"
+        android:id="@+id/emptyCategory"
+        android:textColor="@color/tint_secondary"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+    <ImageView
+
+        android:id="@+id/imageAdd"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/add"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_gravity="center"
+        app:tint="@color/tint_secondary"
+        android:layout_margin="@dimen/_30sdp"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>
